@@ -1,6 +1,6 @@
 public class StBernhard extends Dog {
-    public StBernhard() {
-        super("StBernhard");
+    public StBernhard(String name) {
+        super(name);
     }
 
     public void rescue(String thing) {
