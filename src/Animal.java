@@ -18,4 +18,9 @@ public class Animal {
     public int getLegs() {
         return legs;
     }
+
+    public int setLegs(int legs) {
+        this.legs = legs;
+        return legs;
+    }
 }

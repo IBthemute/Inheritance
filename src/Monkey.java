@@ -8,15 +8,15 @@ public class Monkey extends Animal{
         standing = false;
     }
 
-    public int getLegs() {
-        int legs = allFoursLegs;
-        if (standing) {legs = standingLegs;}
-        return legs;
-    }
-
     public boolean toggleStanding() {
-        if (standing == true) {standing = false;}
-        else {standing = true;}
+        if (standing == true) {
+            standing = false;
+            super.setLegs(allFoursLegs);
+        }
+        else {
+            standing = true;
+            super.setLegs(standingLegs);
+        }
         return standing;
     }
 }
